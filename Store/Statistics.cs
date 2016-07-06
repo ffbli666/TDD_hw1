@@ -6,16 +6,14 @@ using System.Threading.Tasks;
 
 namespace Store
 {
-    public class Statistics<T>
+    public class Statistics
     {
-        private List<T> _datas;
 
-        public Statistics (List<T> datas)
+        public Statistics ()
         {
-            this._datas = datas;
         }
 
-        public List<int> sum(string name, int count)
+        public List<int> sum<T>(List<T> datas, string name, int count)
         {
             throw new NotImplementedException();
         }
