@@ -42,13 +42,13 @@ namespace Store.Tests
         }
 
         [TestMethod()]
-        public void sumTest_Product型態_3筆一組_取得欄位Cost總和()
+        public void sumTest_Product型態_3筆一組_取得欄位pCost總和()
         {
             //arrange
             var target = new Statistics();
 
             //act
-            var actual = target.sum(getProductMockData(), "Cost", 3);
+            var actual = target.sum(getProductMockData(), "pCost", 3);
 
             //assert
             var expected = new int[] { 6, 15, 24, 21 };
@@ -57,13 +57,13 @@ namespace Store.Tests
         }
 
         [TestMethod()]
-        public void sumTest_Product型態_4筆一組_取得欄位Revenue總和()
+        public void sumTest_Product型態_4筆一組_取得欄位pRevenue總和()
         {
             //arrange
             var target = new Statistics();
 
             //act
-            var actual = target.sum(getProductMockData(), "Revenue", 4);
+            var actual = target.sum(getProductMockData(), "pRevenue", 4);
 
             //assert
             var expected = new int[] { 50, 66, 60 };
